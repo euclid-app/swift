@@ -24,7 +24,7 @@ extension LogtoClient {
                 tokenEndpoint: oidcConfig.tokenEndpoint,
                 clientId: logtoConfig.appId,
                 resource: resource,
-                scopes: nil
+                scopes: logtoConfig.scopes
             )
 
             let accessToken = AccessToken(
